@@ -20,15 +20,15 @@ export const Home: React.FC = () => {
     if (loading) {
         return(
             <h1>Loading . . .</h1>
-        );
+        )
     } 
     if (error) {
         return(
             <h1>Error</h1>
-        );
+        )
     }
 
-    const results = data?.episodes.results ?? [];
+    const results = data?.episodes.results;
     const info = data?.episodes.info;
 
     return (
